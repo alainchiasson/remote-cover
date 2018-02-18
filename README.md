@@ -7,7 +7,15 @@ its age, I figured I would print out a new cover.
 
 # Verions
 
-0.1 Initial. After printing found a few measurements that were off. For example,
-I put the cover at 24 mm wide - but it is the INSIDE which should be 24 mm wide.
+0.1
+- Initial.
+- After printing found a few measurements that were off.
+- For example, I put the cover at 24 mm wide - but it is the INSIDE
+  which should be 24 mm wide.
 
-0.2  widdened the body to have a 24mm interior.
+0.2  
+- widened the body to have a 24mm interior.
+- fixed the width of the release clip
+- made everything parametric
+- On relase clip added extra depth for stregth
+- added tapering on release 
