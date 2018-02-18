@@ -7,15 +7,8 @@ its age, I figured I would print out a new cover.
 
 # Verions
 
-0.1
-- Initial.
-- After printing found a few measurements that were off.
-- For example, I put the cover at 24 mm wide - but it is the INSIDE
-  which should be 24 mm wide.
-
-0.2  
-- widened the body to have a 24mm interior.
-- fixed the width of the release clip
-- made everything parametric
-- On relase clip added extra depth for stregth
-- added tapering on release 
+| Version | Changes | Results |
+|---------|---------|---------|
+| 0.1     | Initial | some measurements were off, eg: cover was 24mm wide, but the interior should have been 24mm |
+| 0.2     | Widened body to 24mm interior, modified release clip. |  Body not deep enough, missing a little on the width (.5mm), release clip too thick. Holding clips too thick. Not long enough |
+| 0.3     | Reduced the of the thickness of the clips and the release, made clips shorter, increased the with a little. increased length 2mm |  Not applicable yet |
