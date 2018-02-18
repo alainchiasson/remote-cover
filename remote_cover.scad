@@ -1,13 +1,13 @@
 // Build the bottom of the box
 
 // Sizes
-height = 6;
+height = 5;
 thickness = 1;
 clip_thickness = 0.5;
 clip_width = 4;
 clip_depth = 3;
 span = 62;
-inside_width = 24;
+inside_width = 25;
 outside_width = inside_width + 2* thickness;
 total_height = height + thickness;
 
@@ -33,7 +33,11 @@ module bottom() {
 }
 
 module side() {
-  cube([span,thickness,height]);
+  union (){
+    cube([span-0.5,thickness,height]);
+    translate([span-0.5,0,0]) cube([0.5, thickness, height-0.5]);
+    rotate([90,0,0]) translate([span-0.5,height-0.5,-thickness/2]) cylinder($fn=30, r=0.5, h=1, center=true);
+  }
 }
 
 module end() {
