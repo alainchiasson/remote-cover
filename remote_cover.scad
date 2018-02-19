@@ -15,10 +15,14 @@ release_width = 8;
 release_thickness = 1.5;
 
 module release() {
-  cube([6, release_width, 2 * thickness]);
-  translate([6, 0, thickness]) cube([2, release_width, thickness ]);
+  rotate([90,180,0]) {
+    translate([0,0,-release_width])
+    linear_extrude(release_width) polygon(points=[[0,-2.5], [0,0], [10,0] ]);
+  }
+  cube([6, release_width, 2.5 * thickness]);
+  translate([6, 0, 1.5 * thickness]) cube([2, release_width, thickness ]);
   rotate([90,0,0]) {
-    translate([8,2,-release_width])
+    translate([8,2.5,-release_width])
     linear_extrude(release_width) polygon(points=[[0,-release_thickness], [0,0], [5,0] ]);
   }
 }
@@ -36,7 +40,7 @@ module side() {
   union (){
     cube([span-0.5,thickness,height]);
     translate([span-0.5,0,0]) cube([0.5, thickness, height-0.5]);
-    rotate([90,0,0]) translate([span-0.5,height-0.5,-thickness/2]) cylinder($fn=30, r=0.5, h=1, center=true);
+    rotate([90,0,0]) translate([span-0.75,height-0.75,-thickness/2]) cylinder($fn=30, r=0.75, h=1, center=true);
   }
 }
 
